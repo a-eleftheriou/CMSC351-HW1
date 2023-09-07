@@ -1,1 +1,3 @@
-What is the difference between a merge and a rebase?
+Merging is non-destructive and incorporates changes from different version of files together (ie merging conflicts from a prior commit or merging modifications to main with a branch). Project history is untouched when doing a merge, as merge does not modify previous commits.
+
+Rebasing is destructive and edits commit history, which improves clarity but can impede tracking changes. When rebasing a branch with main, the branch is moved to the front of main, thereby incorporating any changes to main into every version of the branch and modifying the branch's history. Rebasing can also be used to consolidate commits to a branch to clarify its history. Since merge is non-destructive, modification of history can only be done using rebase.
